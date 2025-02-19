@@ -6,13 +6,26 @@ Agora = datetime.now()
 Data = Agora.strftime("%d/%m/%Y")
 Hora = Agora.strftime("%H:%M")
 
-print(f'seu nome é {Nome}, sua idade é {idade}')
-print(f"Data: {Data} Hora: {Hora}")
+
 if Hora <= '12:00':
-    print(f'bom dia {Nome}')
+    print("")
+    print(f'Bom dia! {Nome} de {idade} anos, a Data e a Hora atual são {Data} {Hora}')
+    print("")
 elif Hora <= '18:00':
-    print(f'boa tarde {Nome}')
+    print("")
+    print(f'Boa tarde! {Nome} de {idade} anos, a Data e a Hora atual são {Data} {Hora}')
+    print("")
 else:
-    print(f'boa noite {Nome}')
+    print("")
+    print(f'Boa noite! {Nome} de {idade} anos, a Data e a Hora atual são {Data} {Hora}')
+    print("")
 
+print("VOCÊ QUER JOGAR UM JOGO?")
+Resposta = input("Sim [Y]     Não [N]  ")
 
+if Resposta == "Y" or Resposta == "y":
+    print("ENTÃO VAMOS JOGAR HAHAHAHAHAHA")
+elif Resposta == "N" or Resposta == "n":
+    print("DESCULPE, MAS VAMOS JOGAR HAHAHAHAHAHA")
+else:
+    print(F"VOCÊ NÃO TEM ESCOLHA {Nome} HAHAHAHAHAHA")
