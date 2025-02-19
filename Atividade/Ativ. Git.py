@@ -2,14 +2,9 @@ from datetime import datetime
 
 Nome = input("Insira seu Nome: ")
 idade = int(input('digite sua idade: '))
-Data = datetime.date("%d/%m/%Y")
-Hora = datetime.time("%H:%M:%S")
+Agora = datetime.now()
+Data = Agora.strftime("%d/%m/%Y")
+Hora = Agora.strftime("%H:%M")
 
 
 print(f"Data: {Data} Hora: {Hora}")
-# Agora = datetime.now()
-# Data_Hora_formato = Agora.strftime("%d/%m/%Y %H:%M")
-
-# if Data_Hora_formato <= 
-# print(Data_Hora_formato)
-    
