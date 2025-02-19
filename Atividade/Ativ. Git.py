@@ -1,11 +1,15 @@
+from datetime import datetime
+
 Nome = input("Insira seu Nome: ")
 idade = int(input('digite sua idade: '))
-Hora = input("Informe a hora atual: ")
+Data = datetime.date("%d/%m/%Y")
+Hora = datetime.time("%H:%M:%S")
 
-if Hora <= "12:00":
-    print (f"Bom Dia! {Nome}, sua idade atual é {idade}anos e a hora é {Hora}")
-elif Hora <= "18:00":
-    print (f"Boa Tarde! {Nome}, sua idade atual é {idade} anos e a hora é {Hora}")
-else: 
-    print (f"Boa Noite! {Nome}, sua idade atual é {idade} anos e a hora é {Hora}")
+
+print(f"Data: {Data} Hora: {Hora}")
+# Agora = datetime.now()
+# Data_Hora_formato = Agora.strftime("%d/%m/%Y %H:%M")
+
+# if Data_Hora_formato <= 
+# print(Data_Hora_formato)
     
