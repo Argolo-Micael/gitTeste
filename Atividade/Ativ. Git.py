@@ -39,9 +39,11 @@ while True:
     print('='*50)
     Computador = randint(0,2)
     Jogador = int(input('DIGITE A OPÇÃO DESEJADA: '))
-    if Jogador > 2:
+
+    while Jogador > 2:
         print('OPÇÃO INVÁLIDA!') 
-        Jogador = int(input('DIGITE UMA OPÇÃO VÁLIDA'))
+        Jogador = int(input('DIGITE UMA OPÇÃO VÁLIDA! '))
+
     # ESCOLHA MAQUINA
     if Computador == 0:
         print("___________________________________")
@@ -86,3 +88,5 @@ while True:
 
     if Resposta_2 == "Y" or Resposta_2 == "y":
         break
+    else:
+        print ("VAI CONTINUAR JOGANDO MESMO SAFADO HAHAHAHAHAHAHAHAHA")
