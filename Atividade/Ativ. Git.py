@@ -1,6 +1,11 @@
 Nome = input("Insira seu Nome: ")
-print(f"Boa Tarde! {Nome}")
-
 idade = int(input('digite sua idade: '))
-print(f'seu nome é {Nome} e você tem {idade} anos')
+Hora = input("Informe a hora atual: ")
 
+if Hora <= "12:00":
+    print (f"Bom Dia! {Nome}, sua idade atual é {idade} anos")
+elif Hora <= "18:00":
+    print (f"Boa Tarde! {Nome}, sua idade atual é {idade} anos")
+else: 
+    print (f"Boa Noite! {Nome}, sua idade atual é {idade} anos")
+    
