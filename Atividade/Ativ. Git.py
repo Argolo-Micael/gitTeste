@@ -1,5 +1,5 @@
 from datetime import datetime
-
+from random import randint
 Nome = input("Insira seu Nome: ")
 idade = int(input('digite sua idade: '))
 Agora = datetime.now()
@@ -20,7 +20,7 @@ else:
     print(f'Boa noite! {Nome} de {idade} anos, a Data e a Hora atual são {Data} {Hora}')
     print("")
 
-print("VOCÊ QUER JOGAR UM JOGO?")
+print(f'{Nome}, VOCÊ QUER JOGAR UM JOGO?')
 Resposta = input("Sim [Y]     Não [N]  ")
 
 if Resposta == "Y" or Resposta == "y":
@@ -29,3 +29,10 @@ elif Resposta == "N" or Resposta == "n":
     print("DESCULPE, MAS VAMOS JOGAR HAHAHAHAHAHA")
 else:
     print(F"VOCÊ NÃO TEM ESCOLHA {Nome} HAHAHAHAHAHA")
+
+print('O JOGO É JOKENPÔ')
+print('[ 0 ] PEDRA')
+print('[ 1 ] PAPEL')
+print('[ 2 ] TESOURA')
+escolha_comp = randint(0,2)
+rscolha_jogador = int(input('DIGITE A OPÇÃO DESEJADA: '))
